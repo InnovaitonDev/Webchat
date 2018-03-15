@@ -19,7 +19,7 @@ module.exports = {
     filename: 'webchat.js',
     publicPath: '/dist/'
   },
-
+  
   module: {
     rules: [{
       test: /\.js$/,

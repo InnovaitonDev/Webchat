@@ -43,6 +43,14 @@ class Chat extends Component {
         this.doMessagesPolling()
       }
     })
+
+    // Notify server that the client has sent a message
+    componentDidMount() {
+      fetch('localhost:3000/recst'){method: 'get'}
+        .then(res => res.json());
+    }
+
+
   }
 
   doMessagesPolling = async () => {
